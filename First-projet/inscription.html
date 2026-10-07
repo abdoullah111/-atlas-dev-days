@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Inscription | Atlas Dev Days</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="atlas-logo-4.svg" alt="Atlas Dev Days" class="logo-img"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="speakers.html">Speakers</a></li>
+                <li><a href="inscription.html" class="btn-inscription active">Inscription</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page">
+            <h1>Inscription</h1>
+            <p class="page-intro">Remplissez le formulaire pour réserver votre place.</p>
+
+            <form class="form" action="#" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tel">Téléphone</label>
+                    <input type="tel" id="tel" name="tel">
+                </div>
+
+                <div class="form-group">
+                    <label for="profil">Profil</label>
+                    <select id="profil" name="profil" required>
+                        <option value="">Choisir...</option>
+                        <option value="etudiant">Étudiant</option>
+                        <option value="developpeur">Développeur</option>
+                        <option value="entrepreneur">Entrepreneur</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-log btn-submit">Confirmer mon inscription</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
