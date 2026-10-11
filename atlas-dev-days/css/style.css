@@ -545,8 +545,10 @@ footer p {
     }
     nav ul {
         gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
+        /* flex-wrap: wrap; */
+        /* justify-content: center; */
+        display: flex;
+        flex-direction: column;
     }
     .form-inscription{
         padding: 1.25rem;
