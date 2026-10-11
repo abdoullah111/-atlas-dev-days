@@ -124,6 +124,14 @@ nav ul li a.active {
     margin-top: 0;
     margin-bottom: 1rem;
 }
+h1 {
+    text-transform: uppercase;
+    font-family: var(--font-title);
+    text-align: center;
+    font-size: clamp(2.5rem, 5vw, 4rem);  
+    font-weight: 900;
+}
+
 
 .firstWord {
     color: var(--color-title-alt);
@@ -194,20 +202,6 @@ section h2 {
     margin-bottom: 1.5rem;
     color: var(--color-accent);
     text-align: center;
-}
-
-h1 {
-    text-transform: uppercase;
-    color: #ffffff;
-    font-family: var(--font-title);
-    text-align: center;
-    font-size: clamp(2.5rem, 5vw, 4rem);  
-    font-weight: 900;
-}
-
-h1 span {
-    color: var(--color-accent);
-    font-family: var(--font-title);
 }
 
 .intro {
@@ -385,20 +379,7 @@ footer p {
     max-width: 1200px;
     margin: auto;
 }
-.section-title {
-    font-family: var(--font-title);
-    font-size: 5rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 2px;
-    color: #FFF3DA; 
-    margin-bottom: 2.5rem;
-}
-.section-title span{
-    color: var(--color-secondary);
-    font-family: var(--font-title);
-}
+
 .intervenants-cards {
     display: flex;
     flex-wrap: wrap;
