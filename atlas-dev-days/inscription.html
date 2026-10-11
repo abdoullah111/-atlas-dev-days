@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Atlas Dev Days</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="assets/atlas-logo-4.svg" alt="Atlas Dev Days" class="logo-img"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">intervenants</a></li>
+                <li><a href="inscription.html" class="btn-inscription">Inscription</a></li>
+            </ul>
+        </nav>
+    </header>
+        <main>
+        <section class="inscription">
+            <h1>Inscri<span>ption</span></h1>
+            <p class="text-A">Rejoignez la communauté des développeurs web au Maroc.</p>
 
+            <form class="form-inscription">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nom">Nom complet *</label>
+                        <div class="input-wrap">
+                            <i class="fa-regular fa-user" aria-hidden="true"></i>
+                            <input type="text" id="nom" name="nom" placeholder="Votre nom et prénom" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adresse e-mail *</label>
+                        <div class="input-wrap">
+                            <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                            <input type="email" id="email" name="email" placeholder="exemple@domaine.com" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="telephone">Téléphone *</label>
+                        <div class="input-wrap">
+                            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                            <input type="tel" id="telephone" name="tel" placeholder="06XXXXXXXX"
+                                   pattern="^(\+212|0)[5-7][0-9]{8}$" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="profil">Profil *</label>
+                        <div class="input-wrap">
+                            <i class="fa-regular fa-user" aria-hidden="true"></i>
+                            <select name="profil" id="profil" required>
+                                <option value="" disabled selected>Choisir votre profil</option>
+                                <option>Étudiant</option>
+                                <option>Développeur</option>
+                                <option>Ingénieur</option>
+                                <option>Autre</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <p class="group-title">Ateliers souhaités *</p>
+                <div class="choices">
+                    <label class="choice"><input type="checkbox" name="Ateliers" value="frontend">Frontend</label>
+                    <label class="choice"><input type="checkbox" name="Ateliers" value="backend">Backend</label>
+                    <label class="choice"><input type="checkbox" name="Ateliers" value="carriere">Carrière</label>
+                </div>
+                </div>
+                <div class="form-group">
+                    <p class="group-title">Journée de participation *</p>
+                <div class="choices">
+                    <label class="choice"><input type="radio" name="jour" value="jour 1" required>Jour 1</label>
+                    <label class="choice"><input type="radio" name="jour" value="jour 2">Jour 2</label>
+                    <label class="choice"><input type="radio" name="jour" value="les deux">Les deux</label>
+                </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message (Optionnel)</label>
+                    <div class="input-wrap">
+                        <i class="fa-regular fa-comment" aria-hidden="true"></i>
+                        <textarea id="message" name="message" rows="3" placeholder="Une petite note ou une question..."></textarea>
+                    </div>
+                </div>
+                <label class="choice conditions">
+                    <input name="conditions" type="checkbox">
+                    J'accepte Les <a href="#">conditions de participation</a>
+                </label>
+                <button type="submit" class="btn-submit">
+                    Confirmer mon inscription <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Atlas Dev Days. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+</body>
+</html>
