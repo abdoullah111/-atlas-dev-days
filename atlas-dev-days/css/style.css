@@ -5,7 +5,6 @@
     --bg-card: #0b1536;
     --bg-card-header: #050b2c;
     --bg-footer: #03081e;
-    
     --color-primary: #1f6bff;
     --color-secondary: #3a7bff;
     --color-accent: #6f9bff;
@@ -13,10 +12,8 @@
     --color-text-muted: #a0aec0;
     --color-title-alt: blanchedalmond;
     --color-border: #1c2b66;
-    
     --font-title: 'Holtwood One SC', serif;
     --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
-    
     --border-color: rgba(111, 155, 255, 0.2);
 }
 
@@ -26,12 +23,10 @@
     box-sizing: border-box;
     font-family: var(--font-body);
 }
-
 html, body {
     width: 100%;
     overflow-x: hidden;
 }
-
 body {
     display: flex;
     flex-direction: column;
@@ -39,17 +34,13 @@ body {
     color: var(--color-text);
     min-height: 100vh;
 }
-
 main {
     flex: 1 0 auto;
 }
-
-
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
     outline: 3px solid var(--color-accent);
     outline-offset: 3px;
 }
-
 header {
     position: sticky;
     top: 0;
@@ -62,43 +53,36 @@ header {
     height: 90px;
     border-bottom: 1px solid var(--border-color);
 }
-
 .logo {
     display: flex;
     align-items: center;
 }
-
 .logo-img {
     height: 60px;  
     width: auto;   
 }
-
 nav ul {
     display: flex;
     list-style: none;
     gap: 30px;
     align-items: center;
 }
-
 nav ul li a {
     color: var(--color-text);
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
 nav ul li a:hover,
 nav ul li a.active {
     color: var(--color-secondary);
     text-decoration: underline;
 }
-
 .btn-inscription {
     background-color: var(--color-primary);
     border-radius: 5px;
     padding: 8px 16px; 
     transition: background-color 0.3s ease;
 }
-
 .btn-inscription:hover {
     background-color: var(--color-secondary);
     color: var(--color-text);
@@ -112,7 +96,6 @@ nav ul li a.active {
     padding: 1rem 5%;
     min-height: auto;
 }
-
 .word {
     display: flex;
     justify-content: center;
@@ -131,46 +114,36 @@ h1 {
     font-size: clamp(2.5rem, 5vw, 4rem);  
     font-weight: 900;
 }
-
-
 .firstWord {
     color: var(--color-title-alt);
 }
-
 .secondWord {
     color: var(--color-accent);
 }
-
 .text {
     color: var(--color-text);
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
 }
-
 .event-info {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
     margin-bottom: 2rem;
 }
-
 .date-info, .loc-info {
     display: inline-flex;
     gap: 0.5rem;
     align-items: center;
 }
-
 .icon-date, .loc-icon {
     color: #f4f4f4;
     font-size: 1.5rem;
 }
-
 .date-text, .loc-text {
     color: var(--color-text);
     font-size: 1.1rem;
 }
-
 .btn-log {
     display: inline-block;
     padding: 0.9rem 2rem;
@@ -183,13 +156,11 @@ h1 {
     box-shadow: 0 8px 20px rgba(31, 107, 255, 0.35);
     transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
 }
-
 .btn-log:hover {
     transform: translateY(-3px);
     box-shadow: 0 12px 26px rgba(31, 107, 255, 0.5);
     filter: brightness(1.1);
 }
-
 .btn-log:active {
     transform: translateY(0);
 }
@@ -197,13 +168,11 @@ section {
     padding: 1.5rem 5%;
     color: var(--color-text);
 }
-
 section h2 {
     margin-bottom: 1.5rem;
     color: var(--color-accent);
     text-align: center;
 }
-
 .intro {
     color: #f4f4f4;
     text-align: center;
@@ -217,7 +186,6 @@ section h2 {
     flex-wrap: wrap;
     margin: 2rem 5%;
 }
-
 .day-card {
     flex: 1;
     min-width: 300px;
@@ -227,13 +195,11 @@ section h2 {
     overflow: hidden;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
-
 .day-card:hover {
     box-shadow: 0 12px 26px rgba(31, 107, 255, 0.4);
     transform: translateY(-4px);
     filter: brightness(2.2);
 }
-
 .day-header {
     display: flex;
     background-color: var(--bg-card-header);
@@ -242,31 +208,26 @@ section h2 {
     align-items: center;
     border-bottom: 1px solid var(--color-border);
 }
-
 .day-header h2 {
     margin: 0;
     color: var(--color-accent);
     font-size: 1.4rem;
 }
-
 .day-events {
     list-style: none;
     padding: 20px 20px 20px 30px;
     margin: 0;
     border-left: 3px solid var(--color-accent);
 }
-
 .day-events li {
     margin-bottom: 25px;
     font-size: 1.1rem;
     color: #e0e6ed;
     line-height: 1.6;
 }
-
 .day-events li:last-child {
     margin-bottom: 0;
 }
-
 .day-events li span {
     color: var(--color-accent);
     font-weight: bold;
@@ -276,8 +237,6 @@ section h2 {
 .slot-title::before, .slot-name::before {
     content: "— ";
 }
-
-
 .chiffres-section {
     display: flex ;
     justify-content: center ;
@@ -332,7 +291,6 @@ section h2 {
     list-style: none;
     margin-bottom: 2rem;
 }
-
 .intervenants li:hover{
     filter: brightness(1.5);
 }
@@ -370,7 +328,6 @@ footer {
     padding: 25px 0; 
     font-size: 0.9rem; 
 }
-
 footer p {
     margin: 0; 
 }
@@ -379,7 +336,6 @@ footer p {
     max-width: 1200px;
     margin: auto;
 }
-
 .intervenants-cards {
     display: flex;
     flex-wrap: wrap;
@@ -400,7 +356,6 @@ footer p {
     align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .speaker-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -417,7 +372,6 @@ footer p {
     color:var(--color-text-muted);
     margin-bottom: 0.5rem;
 }
-
 .role-badge {
     background-color: var(--bg-card-header);
     color: var(--color-primary);
@@ -431,18 +385,15 @@ footer p {
     gap: 0.75rem;
     justify-content: center;
 }
-
 .social-links a {
     color: var(--color-text-muted);
     font-size: 1.3rem;
     transition: color 0.3s ease, transform 0.3s ease;
 }
-
 .social-links a:hover{
     color: var(--color-secondary);
     transform: translateY(-3px) scale(1.15);
 }
-
 .inscription {
     padding: 1.5rem 5%;
     color: var(--color-text);
@@ -452,7 +403,6 @@ footer p {
     font-size: 1.1rem;
     color: var(--color-text);
     margin-bottom: 1.5rem;
-    
 }
 .text-A::after{
     content: "";
@@ -480,19 +430,16 @@ footer p {
 .form-row .form-group{
     flex: 1;
 }
-
 .form-group{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
-
 .form-group label {
     font-size: 0.85rem;
     font-weight: 600;
     color: var(--color-text);
 }
-
 .input-wrap input, .input-wrap select, .input-wrap textarea {
     width: 100%;
     padding: 0.75rem 1rem 0.75rem 2.8rem;
@@ -502,8 +449,6 @@ footer p {
     color: var(--color-text);
     font-size: 0.9rem;
     box-shadow: 0 0 40px rgba(39, 102, 251, 0.4);
-    
-    
 }
 .input-wrap input:hover, .input-wrap select:hover, .input-wrap textarea:hover{
     filter: brightness(1.5);
@@ -517,13 +462,11 @@ footer p {
     font-weight: 600;
     color: var(--color-text);
 }
-
 .choices {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
 }
-
 .choice {
     display: flex;
     align-items: center;
@@ -554,7 +497,6 @@ footer p {
     background-color: transparent;
     cursor: pointer;
 }
-
 .choice input[type="checkbox"] {
     border-radius: 4px;
 }
@@ -566,7 +508,6 @@ footer p {
     background-color: var(--color-primary);
     border-color: var(--color-primary);
 }
-
 .conditions a {
     text-decoration: none;
     color: var(--color-secondary);
@@ -574,7 +515,6 @@ footer p {
 .conditions a:hover{
     text-decoration: underline;
 }
-
 .btn-submit {
     align-self: center;
     display: inline-flex;
@@ -591,8 +531,72 @@ footer p {
     box-shadow: 0 8px 20px rgba(31, 107, 255, 0.35);
     transition: transform 0.2s ease, background-color 0.3s ease;
 }
-
 .btn-submit:hover {
     background-color: var(--color-secondary);
     transform: translateY(-3px);
+}
+
+@media (max-width: 768px){
+    header{
+        height: auto;
+        gap: 10px;
+        flex-direction: column;
+        padding: 15px 5%;
+    }
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .form-inscription{
+        padding: 1.25rem;
+        gap: 1.25rem;
+    }
+    .form-row{
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    .choices{
+        gap: 1rem;
+    }
+    .intervenants-cards .speaker-card{
+        width: 100%;
+    }
+    .intervenants-section{
+        padding: 2rem 1rem;
+    }
+    .word{
+        flex-wrap: wrap;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .chiffres{
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .chiffres li strong {
+        font-size: 1.6rem;
+    }
+    .hero .text{
+        font-size: 1rem;
+    }
+    .event-info{
+        flex-wrap: wrap;
+    }
+    .days {
+        margin: 1.5rem 0;
+        gap: 1.5rem;
+    }
+    .day-card {
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+    .day-events {
+        padding: 15px 15px 15px 20px;
+    }
+    .day-events li {
+        font-size: 1rem;
+        margin-bottom: 18px;
+    }
 }
